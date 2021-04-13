@@ -2,31 +2,53 @@
   "name": "tailwind-jit",
   "version": "0.1.0",
   "description": "tailwind jit starter",
-  "homepage": "https://github.com/retinafunk/tailwind-jit",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/retinafunk/tailwind-jit"
+  "scripts": {
+    "dev": "postcss src/css/index.css -o build/css/index.css -w -m",
+    "servor": "npx servor build index.html 8081 --reload --browse --static",
+    "oldstart": "run-p \"dev \" \"serve \" ",
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "lint": "prettier --check \"src/**/*.{js,jsx}\"",
+    "test": "web-test-runner \"src/**/*.test.tsx\""
+  },
+  "dependencies": {
+    "preact": "^10.0.0",
+    "preact-router": "^3.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.15",
+    "@babel/preset-typescript": "^7.13.0",
+    "@prefresh/snowpack": "^3.0.0",
+    "@snowpack/plugin-dotenv": "^2.0.5",
+    "@snowpack/plugin-postcss": "^1.2.2",
+    "@snowpack/plugin-typescript": "^1.2.0",
+    "@snowpack/web-test-runner-plugin": "^0.2.0",
+    "@testing-library/preact": "^2.0.0",
+    "@types/chai": "^4.2.14",
+    "@web/test-runner": "^0.12.0",
+    "autoprefixer": "^10.2.5",
+    "babel-preset-preact": "^2.0.0",
+    "chai": "^4.2.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.9",
+    "postcss-cli": "^8.3.1",
+    "prettier": "^2.0.5",
+    "rollup": "^2.45.2",
+    "servor": "^4.0.2",
+    "snowpack": "^3.3.0",
+    "tailwindcss": "^2.1.1",
+    "typescript": "^4.0.3"
   },
   "author": {
     "name": "Andy Weisner",
     "email": "retinafunk@gmail.com",
     "url": "http://www.retinafunk.com/"
   },
-  "dependencies": {
-
-  },
-  "scripts": {
-    "dev": "postcss src/css/index.css -o build/css/index.css -w -m",
-    "serve": "npx servor build index.html 8081 --reload --browse --static",
-    "start": "run-p \"dev \" \"serve \" "
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.2.5",
-    "postcss": "^8.2.9",
-    "postcss-cli": "^8.3.1",
-    "servor": "^4.0.2",
-    "tailwindcss": "^2.1.1",
-    "npm-run-all": "^4.1.5",
-    "typescript": "^4.2.4"
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/retinafunk/tailwind-jit",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/retinafunk/tailwind-jit"
   }
 }
