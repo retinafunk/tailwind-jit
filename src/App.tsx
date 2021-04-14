@@ -1,7 +1,7 @@
 /** @jsx h */
 import { h } from 'preact';
 import { Router } from 'preact-router';
-import 'tailwindcss/tailwind.css';
+import './index.css';
 
 import Header from './components/header';
 
