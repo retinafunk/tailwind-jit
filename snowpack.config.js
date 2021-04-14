@@ -2,8 +2,11 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
   mount: {
-    public: { url: '/', static: true },
-    src: { url: '/dist' },
+      "./src" : {
+          url : '/',
+          static : false,
+          resolve : true
+      }
   },
   plugins: [
     '@prefresh/snowpack',
