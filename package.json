@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "description": "tailwind jit starter",
   "scripts": {
-    "dev": "postcss src/css/index.css -o build/css/index.css -w -m",
-    "servor": "npx servor build index.html 8081 --reload --browse --static",
-    "oldstart": "run-p \"dev \" \"serve \" ",
     "start": "snowpack dev --verbose",
     "build": "snowpack build",
     "format": "prettier --write \"src/**/*.{js,ts,jsx,tsx}\"",
@@ -32,7 +29,6 @@
     "postcss-cli": "^8.3.1",
     "prettier": "^2.0.5",
     "rollup": "^2.45.2",
-    "servor": "^4.0.2",
     "snowpack": "^3.3.0",
     "tailwindcss": "^2.1.1",
     "typescript": "^4.0.3"
