@@ -1,6 +1,6 @@
 /** @jsx h */
-import { h } from 'preact';
-const Home = () => (
+import { h, FunctionComponent } from 'preact';
+const Home: FunctionComponent = () => (
   <div
     class="wrapper
           | h-full

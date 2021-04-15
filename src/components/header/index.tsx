@@ -1,8 +1,8 @@
 /** @jsx h */
-import { h } from 'preact';
+import { h, FunctionComponent } from 'preact';
 import { Link } from 'preact-router/match';
 
-const Header = () => (
+const Header: FunctionComponent = () => (
 	<header>
 		<h1>Preact App</h1>
 		<nav>

@@ -1,9 +1,12 @@
 /** @jsx h */
-import { h } from 'preact';
-import {useEffect, useState} from "preact/hooks";
+import { h, FunctionComponent } from 'preact';
+import { useEffect, useState } from "preact/hooks";
 
 // Note: `user` comes from the URL, courtesy of our router
-const Profile = ({ user }) => {
+// so it is actually only a string containing a name, not a user object,
+// based on the example created by preact cli default.
+
+const Profile: FunctionComponent<{ user?: string }> = ({ user }) => {
 	const [time, setTime] = useState(Date.now());
 	const [count, setCount] = useState(10);
 

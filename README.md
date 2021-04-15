@@ -1,14 +1,24 @@
-tailwind-jit-starter
+# tailwind-jit-mern starter
 
 this is a dev stack for using tailwindcss 2.1 with JIT compilation
 in a MERN stack with (p)react, node and a no-sql database
 to be deployed on the cloud.
 
+## getting started
+
+```
+yarn install && yarn start
+```
+
+starts a live preview server on
+
+(http://localhost:8080)
+
 ## why not XYZ
 
 Originally intended to use tailwind with create-react-app,
 after trying to solve conflicts and incompatibilities,
-I rebased the starter on [retinafunk's tailwind-jit-starter](https://github.com/retinafunk/tailwind-jit) and decided to drop old technology like webpack in favour of smaller, more elegant solutions, which in consequence lead to the decision to drop React in favour of preact, making our starter a MEPPN stack.
+I rebased the starter on [retinafunk's tailwind-jit-starter](https://github.com/retinafunk/tailwind-jit) and decided to drop old technology like webpack in favour of smaller, more elegant solutions.
 
 ## tailwind
 
@@ -36,6 +46,6 @@ and to have a live reload local dev server for better and faster deb experience
 
 Change the Taiwind css classes in /build/index.html to see in action
 
-Visit http://localhost:8081/ in your Browser
+Visit http://localhost:8080/ in your Browser
 
 HAVE FUN!
