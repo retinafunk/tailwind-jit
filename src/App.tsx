@@ -1,7 +1,7 @@
 /** @jsx h */
 import { h } from 'preact';
 import { Router } from 'preact-router';
-import './index.css';
+// import './index.css'; // import directly in html head
 
 import Header from './components/header';
 

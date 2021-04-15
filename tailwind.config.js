@@ -5,7 +5,7 @@ module.exports = {
   mode: 'jit',
   purge: [
     './public/**/*.html',
-    './src/**/*.{js,jsx,ts,tsx,vue}'
+    './src/**/*.{js,jsx,ts,tsx,html}'
   ],
   presets: [],
   darkMode: false, // or 'media' or 'class'

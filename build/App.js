@@ -24,7 +24,6 @@ import.meta.env = __SNOWPACK_ENV__;
 
           import { h } from "./_snowpack/pkg/preact.v10.5.13.js";
 import { Router } from "./_snowpack/pkg/preact-router.v3.2.1.js";
-import "./index.css.proxy.js";
 import Header from "./components/header/index.js";
 import Home from "./routes/home/index.js";
 import Profile from "./routes/profile/index.js";
