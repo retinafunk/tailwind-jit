@@ -27,6 +27,7 @@ const Profile: FunctionComponent<{ user?: string }> = ({ user }) => {
       <p>
         <button
           onClick={() => loadItems()}
+          class="bg-blue-900"
         >
           query backend server
         </button>

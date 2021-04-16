@@ -1,5 +1,7 @@
 /** @jsx h */
 import { h, FunctionComponent } from 'preact';
+import { Link } from 'preact-router/match';
+
 const Home: FunctionComponent = () => (
   <div
     class="wrapper
@@ -19,7 +21,11 @@ const Home: FunctionComponent = () => (
             | rounded md:rounded-2xl
             "
     >
-      Go to your _profile_page_ ("me" link above) to query the local test server.
+      Go to
+      <Link href="/profile" class="bg-blue-900 p-4">
+        your profile page
+      </Link>
+      to query the local test server.
     </div>
   </div>
 );
