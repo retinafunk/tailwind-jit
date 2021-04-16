@@ -10,13 +10,15 @@ import Home from './routes/home';
 import Profile from './routes/profile';
 
 const App = () => (
-  <div id="app">
+  <div id="app" class="flex-col items-stretch absolute w-full min-h-full">
     <Header />
-    <Router>
-      <Home path="/" />
-      <Profile path="/profile/" user="me" />
-      <Profile path="/profile/:user" />
-    </Router>
+    <div class="flex-grow">
+      <Router>
+        <Home path="/" />
+        <Profile path="/profile/" user="me" />
+        <Profile path="/profile/:user" />
+      </Router>
+    </div>
     <div>
       some code inside (p)react app, but outside router
     </div>
