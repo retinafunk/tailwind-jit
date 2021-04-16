@@ -1,9 +1,9 @@
 {
-  "name": "tailwind-jit",
+  "name": "tailwind-jit-mern",
   "version": "0.1.0",
-  "description": "tailwind jit starter",
+  "description": "tailwind jit mern app starter client",
   "scripts": {
-    "start": "snowpack dev --verbose",
+    "start": "snowpack dev",
     "build": "snowpack build",
     "format": "prettier --write \"src/**/*.{js,ts,jsx,tsx}\"",
     "lint": "prettier --check \"src/**/*.{js,ts,jsx,tsx}\"",
@@ -35,16 +35,5 @@
   },
   "prettier": {
     "singleQuote": true
-  },
-  "author": {
-    "name": "Andy Weisner",
-    "email": "retinafunk@gmail.com",
-    "url": "http://www.retinafunk.com/"
-  },
-  "license": "Apache-2.0",
-  "homepage": "https://github.com/retinafunk/tailwind-jit",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/retinafunk/tailwind-jit"
   }
 }

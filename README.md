@@ -7,7 +7,14 @@ to be deployed on the cloud.
 ## getting started
 
 ```
-yarn install && yarn start
+./install.sh
+./start.sh
+```
+
+### starting the client app
+
+```
+cd client && yarn install && yarn start
 ```
 
 starts a live preview server on
