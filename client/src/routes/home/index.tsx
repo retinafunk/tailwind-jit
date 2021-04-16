@@ -19,9 +19,7 @@ const Home: FunctionComponent = () => (
             | rounded md:rounded-2xl
             "
     >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda
-      eaque id maxime optio quidem quo? Alias doloribus facilis fugiat quaerat?
-      Aliquam delectus dolore in libero, modi molestias qui tempore?
+      Go to your _profile_page_ to query the local test server.
     </div>
   </div>
 );
