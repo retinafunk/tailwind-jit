@@ -21,6 +21,18 @@ starts a live preview server on
 
 (http://localhost:8080)
 
+### starting the server
+
+```
+cd server && yarn install && yarn start
+```
+
+Testing the server post route on the command line:
+
+```
+curl -X POST --data '{"message": "bla"}' -H "Content-Type: application/json"  http://localhost:9000/v0/hello/Ingo
+```
+
 ## why not XYZ
 
 Originally intended to use tailwind with create-react-app,
@@ -56,3 +68,4 @@ Change the Taiwind css classes in /build/index.html to see in action
 Visit http://localhost:8080/ in your Browser
 
 HAVE FUN!
+
