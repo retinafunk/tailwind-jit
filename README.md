@@ -4,6 +4,14 @@ this is a dev stack for using tailwindcss 2.1 with JIT compilation
 in a MERN stack with (p)react, node and a no-sql database
 to be deployed on the cloud.
 
+## requirements
+
+- git
+- node + yarn (or npm)
+- docker + docker-compose
+- shell (bash / WSL)
+- browser + curl (or postman) for manual testing
+
 ## getting started
 
 ```
