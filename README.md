@@ -9,6 +9,9 @@ to be deployed on the cloud.
 ```
 ./install.sh
 ./start.sh
+cd server
+docker-compose up
+yarn watch
 ```
 
 ### starting the client app
@@ -27,11 +30,33 @@ starts a live preview server on
 cd server && yarn install && yarn start
 ```
 
+(or `yarn watch` for a development setup reloading on file change)
+
 Testing the server post route on the command line:
 
 ```
 curl -X POST --data '{"message": "bla"}' -H "Content-Type: application/json"  http://localhost:9000/v0/hello/Ingo
 ```
+
+### starting the database
+
+```
+cd server && docker-compose up
+```
+
+## TODO
+
+- [ ] evaluate, setup, test components
+- [ ] make sure components can communicate at all            => tag as basic proof of concept
+- [ ] refine use cases, hot reloading, performance, security => tag as basic local setup
+      (tailwind hot reload, define own style component, a11y and performance audit)
+      (node typescript and sanitizing, security audit)
+- [ ] make sure setup can be deployed e.g. in AWS cloud      => tag as basic setup
+- [ ] optimize local setup for easier understanding and maintenance (monorepo)
+- [ ] refine testing and documentation                       => tag as full starter setup
+      (fork demo project from starter setup)
+      (backport important updates made in demo project)
+      (document and link demo project on the web)
 
 ## why not XYZ
 
