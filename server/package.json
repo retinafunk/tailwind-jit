@@ -2,10 +2,10 @@
   "name": "server",
   "version": "1.0.0",
   "license": "MIT",
-  "main": "src/server.ts",
+  "main": "src/index.ts",
   "scripts": {
     "start": "node .",
-    "watch": "nodemon src/server.ts",
+    "watch": "nodemon src/index.ts",
     "startdb": "docker-compose up",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

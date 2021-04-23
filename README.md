@@ -40,10 +40,16 @@ cd server && yarn install && yarn start
 
 (or `yarn watch` for a development setup reloading on file change)
 
-Testing the server post route on the command line:
+Testing a static server post route on the command line:
 
 ```
 curl -X POST --data '{"message": "bla"}' -H "Content-Type: application/json"  http://localhost:9000/v0/hello/Ingo
+```
+
+Testing an API route using MongoDB:
+
+```
+curl -X GET  http://localhost:9000/api/books
 ```
 
 ### starting the database
