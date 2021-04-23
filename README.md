@@ -17,7 +17,7 @@ to be deployed on the cloud.
 ```
 ./install.sh
 ./start.sh
-cd server
+cd server/src
 docker-compose up
 yarn watch
 ```

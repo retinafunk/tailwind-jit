@@ -1,0 +1,18 @@
+version: '3.7'
+services:
+  mongodb_container:
+    # image: mongo:latest
+    # setting intial database users is not possible using these vars, see
+    # https://github.com/docker-library/mongo/issues/329
+    # so we need to use a custom dockerfile which can start a script that creates a user
+    build: .
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: 'testroot'
+      MONGO_INITDB_ROOT_PASSWORD: 'testpw'
+    ports:
+      - 27017:27017
+    volumes:
+      - mongodb_data_container:/data/db
+
+volumes:
+  mongodb_data_container:
