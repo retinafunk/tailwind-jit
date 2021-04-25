@@ -16,11 +16,20 @@ to be deployed on the cloud.
 
 ```
 ./install.sh
-./start.sh
+./start.sh        # starts client
 cd server/src
-docker-compose up
-yarn watch
+docker-compose up # starts local mongo db
+yarn watch        # starts local node server
 ```
+
+## stopping
+
+```
+cd server/src
+docker-compose down -v
+```
+
+will also delete created data volumes
 
 ### starting the client app
 

@@ -26,12 +26,10 @@ app.post('/v0/hello/:name', (req, res) => {
 });
 
 connect('mongodb://localhost:27017/books', {
-  user:'testuser',
-  pass:'testpw',
-  dbName:'books',
   keepAlive: true,
   keepAliveInitialDelay: 300000,
-  useNewUrlParser: true
+  useNewUrlParser: true,
+  useUnifiedTopology: true
 });
 
 const db = connection;
@@ -39,13 +37,17 @@ db.on('error', console.error.bind(console, 'Connection Error'))
 db.once('open', () => {
   const booksCollection = db.collection('books')
   booksCollection.estimatedDocumentCount(async (err, count) => {
-      if (count) return;
+      if (count) {
+        console.log('mock data already exists');
+        return;
+      }
       const mockData = [{
         'isbn': '9780061808128',
         'title': 'To Kill a Mockingbird',
         'author': 'Harper Lee'
       }];
       booksCollection.insertMany(mockData);
+      console.log('inserted mock data');
   })
   app.listen(port, () => {
     console.log(`server listing on port ${port}`);
