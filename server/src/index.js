@@ -1,8 +1,11 @@
 import express from 'express';
 import cors from 'cors';
-import { connect, connection } from 'mongoose';
-import apiRouter from './routes/api';
+import mongoose from 'mongoose';
+import apiRouter from './routes/api.js';
 // import mockBooks from './mock/books';
+
+const connect = mongoose.connect;
+const connection = mongoose.connection;
 
 const app = express();
 const port = 9000; // default port to listen

@@ -2,7 +2,7 @@
 
 this is a dev stack for using tailwindcss 2.1 with JIT compilation
 in a MERN stack with (p)react, node and a no-sql database
-to be deployed on the cloud.
+to be deployed on the cloud. TypeScript is currently only used in the front-end.
 
 ## requirements
 

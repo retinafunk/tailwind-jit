@@ -1,12 +1,4 @@
-import { Document, Model, model, Types, Schema, Query } from 'mongoose';
-
-export interface IBook extends Document {
-  isbn: string;
-  title: string;
-  author: string;
-  dateAdded: Date;
-  // favorite / interested functions
-}
+import mongoose from 'mongoose';
 
 // TODO where to put validators and formatters
 // ISBN must be 10 or 13 digits after stripping any non-digit characters (stricly allow only hyphen and digits)
@@ -18,7 +10,7 @@ export interface IBook extends Document {
 // node-isbn resolves isbn from third party servers https://www.npmjs.com/package/node-isbn
 // isbn3 An ISBN JavaScript Library providing parse, hyphenate etc. https://www.npmjs.com/package/isbn3
 
-const BookSchema : Schema = new Schema({
+const BookSchema = new mongoose.Schema({
     isbn: {
       type: String,
       required: true,
@@ -39,4 +31,6 @@ const BookSchema : Schema = new Schema({
     }
 });
 
-export const Book = model<IBook>('Book', BookSchema);
+var Book = mongoose.model('Book', BookSchema );
+
+export default Book;

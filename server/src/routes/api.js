@@ -1,6 +1,6 @@
-import { Book } from '../models/book';
+import Book from '../models/book.js';
 import express from 'express';
-const apiRouter : express.Router = express.Router();
+const apiRouter = express.Router();
 
 apiRouter.post('/book/new', (req, res) => {
     if (!req.body.isbn ) {
