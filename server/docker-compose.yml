@@ -1,0 +1,38 @@
+version: '3.7'
+
+networks:
+  mern_backend:
+    driver: bridge
+
+services:
+
+  server_app:
+    container_name: server_app
+    build: .
+    restart: always
+    depends_on:
+      - "mongodb"
+    ports:
+      - "9000:9000"
+    networks:
+      - mern_backend
+
+  mongodb:
+    container_name: mongodb
+    image: mongo:latest
+    # image using noauth if no credentials are provided,
+    # which is fine for testing on localhost
+    # environment:
+    #  MONGO_INITDB_ROOT_USERNAME: 'testroot'
+    #  MONGO_INITDB_ROOT_PASSWORD: 'testpw'
+    ports:
+      - 27017:27017
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - mern_backend
+
+volumes:
+  mongodb_data:
+
+

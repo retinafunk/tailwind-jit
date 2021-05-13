@@ -2,12 +2,11 @@
   "name": "server",
   "version": "1.0.0",
   "license": "MIT",
-  "main": "src/index.js",
+  "main": "src/api-service/index.js",
   "type": "module",
   "scripts": {
-    "start": "node .",
-    "watch": "nodemon src/index.ts",
-    "startdb": "docker-compose up",
+    "start": "node src/api-service/index.js",
+    "watch": "nodemon src/api-service/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {

@@ -40,7 +40,7 @@ const App = () => /* @__PURE__ */h("div", {
   user: "me"
 }), /* @__PURE__ */h(Profile, {
   path: "/profile/:user"
-}))), /* @__PURE__ */h("div", null, "some code inside (p)react app, but outside router"));
+}))), /* @__PURE__ */h("div", null, "some code inside (p)react api-service, but outside router"));
 
 _c = App;
 export default App;
@@ -64,4 +64,3 @@ $RefreshReg$(_c, "App");
           }
           
 
-        
