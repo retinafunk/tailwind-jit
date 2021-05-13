@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import mongoose from 'mongoose';
+import helmet from 'helmet';
 import apiRouter from './routes/api.js';
 // import mockBooks from './mock/books';
 
@@ -16,6 +17,9 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 app.use(express.json());
+app.use(helmet({
+  hsts: false,
+}));
 app.use('/api', apiRouter)
 
 app.get('/v0/', (req, res) => {

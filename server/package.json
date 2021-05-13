@@ -12,6 +12,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "helmet": "^4.6.0",
     "mongoose": "^5.12.5"
   },
   "devDependencies": {
