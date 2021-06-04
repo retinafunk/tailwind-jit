@@ -30,6 +30,8 @@ module.exports = {
       indigo: colors.indigo,
       purple: colors.violet,
       pink: colors.pink,
+      turquoise: 'var(--mlp-bg-color,#00F7FF)',
+      violet: 'var(--mlp-bg-color,#B300FF)',
     },
     spacing: {
       px: '1px',
@@ -254,7 +256,7 @@ module.exports = {
         '"Segoe UI Symbol"',
         '"Noto Color Emoji"',
       ],
-      serif: ['ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
+      serif: ['Josefin Slab','ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
       mono: [
         'ui-monospace',
         'SFMono-Regular',
