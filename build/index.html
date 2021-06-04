@@ -1,29 +1,155 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="beh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
 </head>
-<body class="block">
-<div class="wrapper
-            | h-full
-            | p-8 lg:p-20
-            | bg-gradient-to-br from-red-700 to-green-700
-            |  ">
-    <div class="box
-        | px-8 py-4
-        | shadow-md lg:shadow-2xl
-        | border border-green-700 border-solid
-        | bg-green-500 text-green-50
-        | max-w-xs lg:max-w-xl mx-auto
-        | transform rotate-6
-        | rounded md:rounded-2xl">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda eaque id maxime optio quidem quo? Alias doloribus facilis fugiat quaerat? Aliquam delectus dolore in libero, modi molestias qui tempore?
+<body class="block overflow-x-hidden ">
+    <div class="carousel
+            | relative h-screen w-screen
+            | overflow-hidden
+            ">
+        <img class="slide " src="./img/bg-1.jpg" alt="1" >
+        <img class="slide" src="./img/bg-2.jpg" alt="1" >
+        <img class="slide" src="./img/bg-3.jpg" alt="1" >
+        <img class="slide" src="./img/bg-4.jpg" alt="1" >
+        <img src="https://www.maria-healing-you.com/site/templates/styles/images/logo-maria-healing-you.svg" alt="Logo" class="logo | absolute top-1/4 left-1/2 transform  -translate-x-1/2 w-full lg:w-1/2">
     </div>
-</div>
+    <div class="overlay
+        | relative w-full
+        | px-4 lg:px-0
+        | absolute lg:right-8 bottom-4
+        | flex flex-col-reverse lg:flex-row  md:items-center md:justify-between
+        ">
+        <div class="leftside | flex justify-center lg:w-1/2 ">
+            <a href="#register-form">
+                <button class="cta-btn
+                | order-last md:order-first
+                | animate-bounce
+                | bg-violet opacity-75
+                | px-4 py-2
+                | rounded-xl
+                | shadow-2xl
+                | text-3xl
+                | mt-8
+                | text-turquoise font-serif font-bold">
+                    Register now!
+                </button>
+            </a>
+        </div>
+        <div class="box
+        | prose-xl
+        | md:order-last
+        | w-full lg:w-1/2
+        | px-8 py-4
+        | bg-violet opacity-75
+        | text-turquoise font-serif font-bold
+        | text-xl
+        | shadow-2xl
+        | rounded">
+            <h2 class="">connect to life and let go </h2>
+            <h3></h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda eaque id maxime optio quidem quo? Alias doloribus facilis fugiat quaerat? Aliquam delectus dolore in libero, modi molestias qui tempore?
+            </p>
+        </div>
+    </div>
+    <div id="register-form"
+         class="register-form
+                | bg-image bg-gradient-to-br from-violet to-turquoise
+                | min-h-screen
+                | md:flex justify-center items-center
+                |">
+        <form action="/register"
+              class="form
+                | w-full
+                | lg:w-1/3 mx-auto
+                | space-y-3
+                | p-4
+                |">
+            <h2 class="text-6xl font-serif text-white">Register now!</h2>
+            <div class="form-field">
+                <label for="fullname"
+                       class=" block
+                             | text-white
+                             | font-serif font-bold ">Name</label>
+                <input class="block
+                    | w-full
+                    | px-2 py-2
+                    | bg-violet
+                    | text-white font-serif font-bold
+                    | shadow-xl
+                    | rounded"
+                       id="fullname" type="text" name="fullname" required>
+            </div>
+            <div class="form-field">
+                <label for="email"
+                       class=" block
+                             | text-white
+                             | font-serif font-bold ">Email</label>
+                <input class="block
+                    | w-full
+                    | px-2 py-2
+                    | bg-violet
+                    | text-white font-serif font-bold
+                    | shadow-xl
+                    | rounded"
+                       id="email" type="email" name="email" required>
+            </div>
+            <div class="form-field">
+                <label for="telefon"
+                       class=" block
+                             | text-white
+                             | font-serif font-bold ">Telefon</label>
+                <input class="block
+                    | w-full
+                    | px-2 py-2
+                    | bg-violet
+                    | text-white font-serif font-bold
+                    | shadow-xl
+                    | rounded"
+                       id="telefon" type="text" name="telefon" required>
+            </div>
+            <div class="form-field">
+                <label for="message"
+                       class=" block
+                             | text-white
+                             | font-serif font-bold ">Message</label>
+                <textarea name="message"
+                          id="message"
+                          cols="30"
+                          rows="10"
+                          class="message
+                            | w-full
+                            | px-2 py-2
+                            | bg-violet
+                            | rounded
+                            | shadow-xl
+                            | text-white font-serif font-bold
+                            |"
+                          >
+                </textarea>
+            </div>
+            <div class="form-field | flex justify-center">
+                <button class="submit-btn
+                            | px-4 py-2
+                            | bg-image bg-gradient-to-br from-violet to-turquoise
+                            | rounded-xl
+                            | shadow-xl
+                            | text-3xl
+                            | text-white font-serif font-bold
+                            |">
+                    Send now!
+                </button>
+            </div>
+        </form>
+
+    </div>
 </body>
-</html>
+</html>4
