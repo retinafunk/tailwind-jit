@@ -1,18 +1,18 @@
 {
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "scripts": {
     "dev": "postcss src/css/index.css -o build/css/index.css -w -m",
     "serve": "npx servor build index.html 8081 --reload --browse --static",
     "start": "run-p \"dev \" \"serve \" "
   },
   "devDependencies": {
+    "@tailwindcss/forms": "^0.3.3",
+    "@tailwindcss/typography": "^0.4.1",
     "autoprefixer": "^10.2.5",
+    "npm-run-all": "^4.1.5",
     "postcss": "^8.2.9",
     "postcss-cli": "^8.3.1",
     "servor": "^4.0.2",
-    "tailwindcss": "^2.1.2",
-    "npm-run-all": "^4.1.5"
+    "tailwindcss": "^2.1.2"
   }
 }
