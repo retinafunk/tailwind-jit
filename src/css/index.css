@@ -2,6 +2,22 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-.andy{
-  color:red;
+.clip-1-bottom {
+  height:400px;
+  clip-path: path('M1939.334-21.852s-228.768-30.757-470.828-30.757S971.1-21.852,971.1-21.852,661.211,25.712,418.437,25.712,0-21.852,0-21.852v686.36H1939.334Z');
+}
+
+.deco-shape-1 {
+  @apply relative z-30;
+  transform: translateY(-170px);
+}
+
+.deco-shape-2 {
+  @apply relative z-40;
+  transform: translateY(-680px);
+}
+
+.about-me{
+  z-index: 50;
+  transform: translateY(-880px);
 }
