@@ -945,6 +945,9 @@ select {
 .bottom-8 {
 	bottom: 2rem;
 }
+.bottom-0 {
+	bottom: 0px;
+}
 .mx-auto {
 	margin-left: auto;
 	margin-right: auto;
@@ -987,6 +990,10 @@ select {
 	--tw-bg-opacity: 1;
 	background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
 }
+.bg-gray-600 {
+	--tw-bg-opacity: 1;
+	background-color: rgba(75, 85, 99, var(--tw-bg-opacity));
+}
 .bg-gradient-to-b {
 	background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -1014,12 +1021,16 @@ select {
 .p-8 {
 	padding: 2rem;
 }
+.px-4 {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
 .py-8 {
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 }
-.pt-20 {
-	padding-top: 5rem;
+.pb-80 {
+	padding-bottom: 20rem;
 }
 .text-7xl {
 	font-size: 4.5rem;
@@ -1064,6 +1075,10 @@ select {
   transform: translateY(-8vw);
 }
 
+.aula-inner{
+  transform: translateY(-6vw);
+}
+
 .deco-shape {
   background-repeat: no-repeat;
   background-size:100%;
@@ -1080,7 +1095,11 @@ select {
   background-position: center bottom;
   aspect-ratio: 16/5;
 }
+@media (min-width: 768px) {
 
-.aula{
-
+	.md\:px-8 {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
 }
+

@@ -21,6 +21,10 @@
   transform: translateY(-8vw);
 }
 
+.aula-inner{
+  transform: translateY(-6vw);
+}
+
 .deco-shape {
   background-repeat: no-repeat;
   background-size:100%;
@@ -38,6 +42,3 @@
   aspect-ratio: 16/5;
 }
 
-.aula{
-
-}
