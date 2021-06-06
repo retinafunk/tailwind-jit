@@ -2,22 +2,42 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+.debug{
+  outline: 2px dashed red;
+}
+
 .clip-1-bottom {
   height:400px;
   clip-path: path('M1939.334-21.852s-228.768-30.757-470.828-30.757S971.1-21.852,971.1-21.852,661.211,25.712,418.437,25.712,0-21.852,0-21.852v686.36H1939.334Z');
 }
 
-.deco-shape-1 {
-  @apply relative z-30;
-  transform: translateY(-170px);
+.hero-image{
+  max-width: 1200px;
 }
 
-.deco-shape-2 {
-  @apply relative z-40;
-  transform: translateY(-680px);
-}
-
-.about-me{
+.about-me-inner,.aula-inner{
   z-index: 50;
-  transform: translateY(-880px);
+  position: relative;
+  transform: translateY(-8vw);
+}
+
+.deco-shape {
+  background-repeat: no-repeat;
+  background-size:100%;
+  background-position: center top;
+  aspect-ratio: 16/8;
+}
+
+.deco-shape-1 {
+  background-image: url('../img/deco-shape-1.png');
+  aspect-ratio: 16/8;
+}
+.deco-shape-2 {
+  background-image: url('../img/deco-shape-2.png');
+  background-position: center bottom;
+  aspect-ratio: 16/5;
+}
+
+.aula{
+
 }
