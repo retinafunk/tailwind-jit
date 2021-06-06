@@ -30,6 +30,15 @@ module.exports = {
       indigo: colors.indigo,
       purple: colors.violet,
       pink: colors.pink,
+      ikBlueDark: 'var(-ik-color-1-dark,#0C6363)',
+      ikBlueMedium: 'var(-ik-color-1-med,#17C5C5)',
+      ikGrayDark: 'var(-ik-color-2-dark,#4E6D6D)',
+      ikGray: 'var(-ik-color-2-med,#587B7B)',
+      ikGrayBright: 'var(-ik-color-2-bri,#9CD9D9)',
+      ikRedDark: 'var(-ik-color-3-dark,#7F293D)',
+      ikRed: 'var(-ik-color-3-med,#FE527A)',
+      ikOrange: 'var(-ik-color-3-med,#FF8A00)',
+      ikMint: 'var(-ik-color-3-med,#52E5BA)',
     },
     spacing: {
       px: '1px',
@@ -239,6 +248,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
+        'brandon-grotesque',
         'ui-sans-serif',
         'system-ui',
         '-apple-system',
