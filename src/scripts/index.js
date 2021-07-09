@@ -14,7 +14,7 @@ const compareImageSlider = () => {
         $captionLeft = $comparisonSlider.querySelector('.slider-caption-left'),
         $captionRight = $comparisonSlider.querySelector('.slider-caption-right'),
 
-        $comparisonSliderWidth = 1212,
+        $comparisonSliderWidth = $comparisonSlider.offsetWidth,
         $comparisonSliderHeight = $comparisonSlider.offsetHeight,
 
         $startPosition = ($comparisonSliderWidth / 100) * 50,

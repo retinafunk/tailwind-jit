@@ -8,8 +8,9 @@
 
 
 .comparison-slider-container {
-  max-width: 1212px;
-  max-height: 760px;
+  aspect-ratio: 16/9;
+  max-width: 80vw;
+ /* max-height: 760px;*/
   width: 100%;
   height: 100%;
   margin: auto;
@@ -28,7 +29,7 @@
 }
 .slider-col .slider-bg {
   background-position: center center;
-  background-size: contain;
+  background-size: 90%;
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
@@ -46,7 +47,7 @@
 }
 
 .slider-right .slider-bg {
-  width: 1212px;
+  width: 80vw;
   background-image: url("./inkukom-hero-1.png");
 }
 .slider-right .slider-caption-right {
@@ -63,7 +64,7 @@
   left: 0px;
 }
 .slider-left .slider-bg {
-  width: 1212px;
+  width: 80vw;
   background-image: url("./inkukom-hero-2.png");
 }
 .slider-left .slider-caption-left {
