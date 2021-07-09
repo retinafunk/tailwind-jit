@@ -1,9 +1,13 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import "./_compareImageSlider.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 
 .debug{
-  outline: 2px dashed red;
+  outline: 2px dashed blueviolet;
 }
 
 .clip-1-bottom {
